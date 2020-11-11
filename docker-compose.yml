@@ -1,0 +1,19 @@
+version: '3'
+
+services: 
+    react:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        tty: true
+        volumes: 
+            - .:/usr/app
+            - /usr/app/node_modules
+        environment: 
+            - NODE_ENV=development
+        command: npm start
+        ports:
+            - 7070:1234
+            - 12345:12345
+       
