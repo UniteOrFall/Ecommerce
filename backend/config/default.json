@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://konfinity:konfinity@cluster0-eu1vj.mongodb.net/Ecommerce?retryWrites=true&w=majority",
+    "jwtSecret": "mysecret"
+}
